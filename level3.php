@@ -3,10 +3,10 @@
     <div class="col-lg-12 text-center">
         <h1>PHP File Inclusion Vulnerability Example 2:</h1>
         <?php
-        	if(GET["file"]){
+            if(GET["file"]){
             $file = preg_replace("../","",$file);
-        		include($file);
-        	}
+                include($file);
+            }
         ?>
     </div>
 </div>
