@@ -4,10 +4,9 @@
         <h1>PHP File Inclusion Vulnerability Example 2:</h1>
         <?php
             if(GET["file"]){
-                $file = GET["file"].".php";
-                $file = preg_replace("/\x00.*/","",$file);
-                include($file);
-        	}
+            	$file = GET["file"];
+                include("./var/www/site/".$file);
+            }
         ?>
     </div>
 </div>
